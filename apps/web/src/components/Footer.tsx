@@ -12,23 +12,15 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest mb-4 text-white">
-              Shop
+              Create
             </h4>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/products"
-                  className="text-sm text-gray-500 hover:text-white transition-colors"
-                >
-                  All Products
-                </Link>
-              </li>
               <li>
                 <Link
                   href="/categories/clothing"
                   className="text-sm text-gray-500 hover:text-white transition-colors"
                 >
-                  Clothing
+                  All
                 </Link>
               </li>
               <li>
@@ -36,7 +28,7 @@ export default function Footer() {
                   href="/categories/footwear"
                   className="text-sm text-gray-500 hover:text-white transition-colors"
                 >
-                  Footwear
+                  underwear
                 </Link>
               </li>
               <li>
