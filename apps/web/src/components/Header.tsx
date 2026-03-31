@@ -109,6 +109,7 @@ export default function Header() {
           { label: 'Your garments', href: '/products' },
           { label: 'Measure', href: '/products' },
           { label: 'Create', href: '/products' },
+          { label: 'Why', href: '/products' },
         ].map((item) => (
           <Link
             key={item.label}

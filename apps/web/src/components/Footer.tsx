@@ -51,7 +51,7 @@ export default function Footer() {
                   href="/account"
                   className="text-sm text-gray-500 hover:text-white transition-colors"
                 >
-                  My Account
+                  Mine
                 </Link>
               </li>
               <li>
