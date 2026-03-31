@@ -48,10 +48,8 @@ export default function Home() {
       {/* Newsletter */}
       <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h2 className="text-3xl font-bold mb-3">Stay in the Loop</h2>
-          <p className="text-gray-500 mb-8 text-sm">
-            New arrivals and exclusive offers — straight to your inbox.git
-          </p>
+          <h2 className="text-3xl font-bold mb-3">The Loop</h2>
+          <p className="text-gray-500 mb-8 text-sm">New arrivals and exclusive offers</p>
           <form className="flex max-w-md mx-auto gap-2">
             <input
               type="email"
