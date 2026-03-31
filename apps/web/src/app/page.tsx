@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       {/* Categories */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {/*<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-2xl font-bold mb-8">Shop by Category</h2>
         <div className="grid grid-cols-3 gap-4">
           {categories.map((cat) => (
@@ -26,11 +26,11 @@ export default function Home() {
           ))}
         </div>
       </section>
-
+        /*}
       {/* Featured Products */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-100">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold">Featured</h2>
+          <h2 className="text-2xl font-bold">Create</h2>
           <Link
             href="/products"
             className="text-sm text-gray-500 hover:text-black transition-colors"
@@ -46,17 +46,17 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-stone-100">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h2 className="text-3xl font-bold mb-3">Stay in the Loop</h2>
           <p className="text-gray-500 mb-8 text-sm">
-            New arrivals, restocks, and exclusive offers — straight to your inbox.
+            New arrivals and exclusive offers — straight to your inbox.
           </p>
           <form className="flex max-w-md mx-auto gap-2">
             <input
               type="email"
               placeholder="your@email.com"
-              className="flex-1 border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:border-black"
+              className="flex-1 border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:border-black rounded-full"
             />
             <button className="bg-black text-white px-6 py-2 text-sm font-medium hover:bg-stone-800 transition-colors">
               Subscribe

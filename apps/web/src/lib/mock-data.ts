@@ -7,6 +7,7 @@ export type Product = {
   bg: string;
   rating: number;
   reviewCount: number;
+  images: string[];
 };
 
 export type Category = {
@@ -35,6 +36,7 @@ export const products: Product[] = [
     bg: 'bg-stone-200',
     rating: 4.5,
     reviewCount: 128,
+    images: ['/1.jpg', '/2.jpg', '/3.jpg'],
   },
   {
     id: '2',
@@ -45,6 +47,7 @@ export const products: Product[] = [
     bg: 'bg-blue-200',
     rating: 4.3,
     reviewCount: 94,
+    images: ['/2.jpg', '/3.jpg', '/4.jpg'],
   },
   {
     id: '3',
@@ -56,6 +59,7 @@ export const products: Product[] = [
     bg: 'bg-amber-100',
     rating: 4.7,
     reviewCount: 213,
+    images: ['/3.jpg', '/4.jpg', '/5.jpg'],
   },
   {
     id: '4',
@@ -66,6 +70,7 @@ export const products: Product[] = [
     bg: 'bg-green-100',
     rating: 4.4,
     reviewCount: 76,
+    images: ['/4.jpg', '/5.jpg', '/1.jpg'],
   },
   {
     id: '5',
@@ -76,6 +81,7 @@ export const products: Product[] = [
     bg: 'bg-orange-100',
     rating: 4.6,
     reviewCount: 157,
+    images: ['/5.jpg', '/1.jpg', '/2.jpg'],
   },
   {
     id: '6',
@@ -86,6 +92,7 @@ export const products: Product[] = [
     bg: 'bg-indigo-100',
     rating: 4.2,
     reviewCount: 89,
+    images: ['/1.jpg', '/3.jpg', '/5.jpg'],
   },
   {
     id: '7',
@@ -96,6 +103,7 @@ export const products: Product[] = [
     bg: 'bg-rose-100',
     rating: 4.5,
     reviewCount: 102,
+    images: ['/2.jpg', '/4.jpg', '/1.jpg'],
   },
   {
     id: '8',
@@ -106,6 +114,7 @@ export const products: Product[] = [
     bg: 'bg-yellow-100',
     rating: 4.1,
     reviewCount: 63,
+    images: ['/3.jpg', '/5.jpg', '/2.jpg'],
   },
 ];
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { products } from '@/lib/mock-data';
 import ProductCard from '@/components/ProductCard';
 import { notFound } from 'next/navigation';
@@ -14,8 +15,22 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid md:grid-cols-2 gap-16 mb-20">
-        {/* Image */}
-        <div className={`${product.bg} rounded-xl aspect-square`} />
+        {/* Images */}
+        <div className="flex flex-col gap-3">
+          <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+            <Image src={product.images[0]} alt={product.name} fill className="object-cover" />
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            {product.images.slice(1).map((img, i) => (
+              <div
+                key={i}
+                className="relative aspect-square rounded-lg overflow-hidden bg-gray-100"
+              >
+                <Image src={img} alt={`${product.name} ${i + 2}`} fill className="object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Info */}
         <div className="flex flex-col">
