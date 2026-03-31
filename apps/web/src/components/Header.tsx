@@ -106,7 +106,7 @@ export default function Header() {
       {/* Nav links */}
       <nav className="bg-black flex justify-center">
         {[
-          { label: 'Your garments', href: '/products' },
+          { label: 'Yours', href: '/products' },
           { label: 'Measure', href: '/products' },
           { label: 'Create', href: '/products' },
           { label: 'Why', href: '/products' },
