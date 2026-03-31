@@ -7,22 +7,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="bg-stone-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48">
-          <p className="text-sm text-stone-400 uppercase tracking-widest mb-4">New Collection</p>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight max-w-2xl mb-8">
-            Essentials, Elevated.
-          </h1>
-          <Link
-            href="/products"
-            className="inline-block bg-white text-black px-8 py-3 text-sm font-medium hover:bg-stone-100 transition-colors"
-          >
-            Shop Now
-          </Link>
-        </div>
-      </section>
-
       {/* Categories */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-2xl font-bold mb-8">Shop by Category</h2>

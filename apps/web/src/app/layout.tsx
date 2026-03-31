@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Manrope } from 'next/font/google';
+import { Manrope, Overpass } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './globals.css';
@@ -7,6 +7,12 @@ import './globals.css';
 const manrope = Manrope({
   variable: '--font-manrope',
   subsets: ['latin'],
+});
+
+const overpass = Overpass({
+  variable: '--font-overpass',
+  subsets: ['latin'],
+  weight: ['900'],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} flex flex-col min-h-screen `}>
+      <body className={`${manrope.variable} ${overpass.variable} flex flex-col min-h-screen`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
