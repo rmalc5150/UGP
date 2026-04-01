@@ -30,12 +30,12 @@ export default function Home() {
       {/* Featured Products */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold">Create</h2>
+          <h2 className="text-2xl font-bold">We</h2>
           <Link
             href="/products"
             className="text-sm text-gray-500 hover:text-black transition-colors"
           >
-            View all →
+            View all past designs →
           </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

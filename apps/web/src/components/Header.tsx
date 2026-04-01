@@ -106,9 +106,9 @@ export default function Header() {
       {/* Nav links */}
       <nav className="bg-black flex justify-center">
         {[
-          { label: 'Yours', href: '/products' },
+          { label: 'We', href: '/products' },
           { label: 'Measure', href: '/products' },
-          { label: 'Create', href: '/products' },
+          { label: 'Design', href: '/products' },
           { label: 'Sustain', href: '/products' },
         ].map((item) => (
           <Link
