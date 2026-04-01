@@ -54,9 +54,9 @@ export default function Home() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="flex-1 border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:border-black rounded-full"
+              className="flex-1 border border-stone-800 px-4 py-2 text-sm focus:outline-none focus:border-stone-700 rounded-full bg-transparent"
             />
-            <button className="bg-black text-white px-6 py-2 text-sm font-medium hover:bg-stone-800 transition-colors">
+            <button className="bg-black text-stone-400 px-6 py-2 text-sm font-medium hover:text-white transition-colors">
               Subscribe
             </button>
           </form>
