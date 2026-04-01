@@ -94,21 +94,23 @@ export default function Header() {
       </div>
 
       {/* Hero banner */}
-      <div className="relative overflow-hidden">
-        <Radio fill className="object-cover" />
-        <div className="relative z-10 md:flex justify-center items-center py-8 px-4 gap-4">
-          <Untitled className="h-12 w-auto" />
-          <Garment className="h-12 w-auto" />
-          <Project className="h-12 w-auto" />
+      <Link href="/">
+        <div className="relative overflow-hidden">
+          <Radio fill className="object-cover" />
+          <div className="relative z-10 md:flex justify-center items-center py-8 px-4 gap-4">
+            <Untitled className="h-12 w-auto" />
+            <Garment className="h-12 w-auto" />
+            <Project className="h-12 w-auto" />
+          </div>
         </div>
-      </div>
+      </Link>
 
       {/* Nav links */}
       <nav className="bg-black flex justify-center">
         {[
           { label: 'We', href: '/products' },
           { label: 'Measure', href: '/products' },
-          { label: 'Design', href: '/products' },
+          { label: 'Create', href: '/products' },
           { label: 'Sustain', href: '/products' },
         ].map((item) => (
           <Link

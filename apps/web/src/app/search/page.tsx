@@ -18,16 +18,19 @@ export default async function SearchPage({
     : products;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <form className="max-w-xl mb-10">
-        <div className="flex border border-gray-200 focus-within:border-black transition-colors">
+    <div className="px-4 sm:px-6 lg:px-8 py-12">
+      <form className="mb-10">
+        <div className="flex items-center w-full border border-stone-800 rounded-xl overflow-hidden">
           <input
             name="q"
             defaultValue={query}
             placeholder="Search products..."
-            className="flex-1 px-4 py-3 text-sm focus:outline-none"
+            className="flex-1 px-4 py-3 text-sm focus:outline-none bg-transparent"
           />
-          <button type="submit" className="px-5 text-gray-400 hover:text-black transition-colors">
+          <button
+            type="submit"
+            className="px-5 py-3 text-gray-400 hover:bg-stone-800 transition-colors shrink-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -57,7 +60,7 @@ export default async function SearchPage({
           <p className="text-gray-500">No products found for &ldquo;{query}&rdquo;.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {results.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}
