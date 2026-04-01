@@ -6,7 +6,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group">
       <Link href={`/products/${product.id}`}>
-        <div className="relative aspect-square rounded-lg mb-3 overflow-hidden bg-gray-100">
+        <div className="relative aspect-square rounded-lg mb-3 overflow-hidden">
           <Image
             src={product.images[0]}
             alt={product.name}
