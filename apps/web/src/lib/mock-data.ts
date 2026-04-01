@@ -119,8 +119,8 @@ export const products: Product[] = [
 ];
 
 export const categories: Category[] = [
-  { slug: 'clothing', name: 'Clothing', bg: 'bg-stone-100', count: 4 },
-  { slug: 'footwear', name: 'Footwear', bg: 'bg-amber-100', count: 1 },
+  { slug: 'all', name: 'All', bg: 'bg-stone-100', count: 4 },
+  { slug: 'underwear', name: 'Underwear', bg: 'bg-amber-100', count: 1 },
   { slug: 'accessories', name: 'Accessories', bg: 'bg-green-100', count: 3 },
 ];
 

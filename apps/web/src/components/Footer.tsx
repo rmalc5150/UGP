@@ -10,14 +10,14 @@ export default function Footer() {
             <h4 className="font-semibold uppercase tracking-widest text-white">Create</h4>
 
             <Link
-              href="/categories/clothing"
+              href="/categories/all"
               className="text-gray-500 hover:text-white transition-colors"
             >
               All
             </Link>
 
             <Link
-              href="/categories/footwear"
+              href="/categories/underwear"
               className="text-gray-500 hover:text-white transition-colors"
             >
               underwear
