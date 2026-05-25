@@ -60,7 +60,7 @@ export default function Home() {
 
             <div className="relative h-6 flex-grow overflow-hidden">
               <p
-                className="absolute top-1/2 whitespace-nowrap text-2xl font-bold uppercase text-white will-change-transform"
+                className="absolute top-1/2 whitespace-nowrap text-2xl font-bold text-white will-change-transform"
                 style={{
                   left: `${progress}%`,
                   transform: 'translate3d(-0%, -50%, 0)',
