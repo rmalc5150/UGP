@@ -3,9 +3,9 @@ import Logo from '@/components/Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 text-xs">
+    <footer className="bg-black text-gray-300 text-xs flex">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-        <div className="grid lg:grid-cols-3">
+        <div className="grid lg:grid-cols-3 gap-8">
           <div className="flex space-x-2">
             <h4 className="font-semibold uppercase tracking-widest text-white">Create</h4>
 
@@ -53,15 +53,13 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex space-x-2">
-            <h4 className="text-xs font-semibold uppercase tracking-widest mb-4 text-white">
-              Help
-            </h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest">Help</h4>
 
-            <Link href="/contact" className="text-gray-500 hover:text-white transition-colors">
+            <Link href="/contact" className="text-gray-500 transition-colors">
               Contact
             </Link>
 
-            <Link href="/privacy" className="text-gray-500 hover:text-white transition-colors">
+            <Link href="/privacy" className="text-gray-500 transition-colors">
               Privacy
             </Link>
           </div>

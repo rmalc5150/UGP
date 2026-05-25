@@ -20,7 +20,7 @@ export default function CartPage() {
           <p className="text-gray-500 mb-6">Your cart is empty.</p>
           <Link
             href="/products"
-            className="bg-black text-white px-8 py-3 text-sm font-medium hover:bg-stone-800 transition-colors"
+            className="bg-black text-white px-8 py-3 text-sm font-medium transition-colors"
           >
             Continue Shopping
           </Link>
@@ -31,7 +31,7 @@ export default function CartPage() {
           <div className="md:col-span-2 space-y-6">
             {cartItems.map(({ product, qty, size }) => (
               <div key={product.id} className="flex gap-4 pb-6 border-b border-gray-100">
-                <div className={`${product.bg} w-24 h-24 rounded-lg shrink-0`} />
+                <div className={`w-24 h-24 rounded-lg shrink-0`} />
                 <div className="flex-1">
                   <div className="flex justify-between">
                     <div>
@@ -44,9 +44,9 @@ export default function CartPage() {
                   </div>
                   <div className="flex items-center justify-between mt-4">
                     <div className="flex items-center border border-gray-200">
-                      <button className="px-3 py-1 text-sm hover:bg-gray-50">−</button>
+                      <button className="px-3 py-1 text-sm">−</button>
                       <span className="px-4 py-1 text-sm border-x border-gray-200">{qty}</span>
-                      <button className="px-3 py-1 text-sm hover:bg-gray-50">+</button>
+                      <button className="px-3 py-1 text-sm">+</button>
                     </div>
                     <p className="text-sm font-medium">${product.price * qty}</p>
                   </div>
@@ -56,7 +56,7 @@ export default function CartPage() {
           </div>
 
           {/* Summary */}
-          <div className="bg-stone-50 rounded-lg p-6 h-fit">
+          <div className="rounded-lg p-6 h-fit">
             <h2 className="font-semibold mb-4 text-sm">Order Summary</h2>
             <div className="space-y-3 text-sm mb-6">
               <div className="flex justify-between">
