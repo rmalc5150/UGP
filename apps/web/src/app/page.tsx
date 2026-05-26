@@ -48,7 +48,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-between mb-8"></div>
         <div className="inline-block">
-          <div className="mb-4 flex w-full items-center gap-4 px-4 py-3">
+          <div className="mb-4 flex w-full items-center gap-4 pr-4 py-3">
             <button
               type="button"
               onClick={togglePlay}
