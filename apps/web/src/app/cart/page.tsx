@@ -31,7 +31,11 @@ export default function CartPage() {
           <div className="md:col-span-2 space-y-6">
             {cartItems.map(({ product, qty, size }) => (
               <div key={product.id} className="flex gap-4 pb-6 border-b border-gray-100">
-                <div className={`w-24 h-24 rounded-lg shrink-0`} />
+                <img
+                  src={product.images?.[0]}
+                  alt={product.name}
+                  className="w-24 h-24 rounded-lg shrink-0 object-cover"
+                />
                 <div className="flex-1">
                   <div className="flex justify-between">
                     <div>
@@ -43,10 +47,10 @@ export default function CartPage() {
                     </button>
                   </div>
                   <div className="flex items-center justify-between mt-4">
-                    <div className="flex items-center border border-gray-200">
-                      <button className="px-3 py-1 text-sm">−</button>
-                      <span className="px-4 py-1 text-sm border-x border-gray-200">{qty}</span>
-                      <button className="px-3 py-1 text-sm">+</button>
+                    <div className="flex items-center gap-3">
+                      <button className="px-2 py-1 text-sm">−</button>
+                      <span className="text-sm">{qty}</span>
+                      <button className="px-2 py-1 text-sm">+</button>
                     </div>
                     <p className="text-sm font-medium">${product.price * qty}</p>
                   </div>
@@ -74,13 +78,13 @@ export default function CartPage() {
             </div>
             <Link
               href="/checkout"
-              className="block w-full bg-black text-white text-center py-3 text-sm font-medium hover:bg-stone-800 transition-colors"
+              className="block w-full bg-white text-black text-center py-3 text-sm font-medium rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
             >
               Checkout
             </Link>
             <Link
               href="/products"
-              className="block w-full text-center text-sm text-gray-500 mt-3 hover:text-black transition-colors"
+              className="block py-1 rounded-xl w-full text-center text-sm text-gray-400 mt-3 hover:bg-white hover:text-black transition-colors"
             >
               Continue Shopping
             </Link>

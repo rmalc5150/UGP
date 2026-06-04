@@ -75,7 +75,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => togglePlay('measure', measureVideoRef)}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 hover:bg-white text-black transition"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-800 text-white transition"
               aria-label={playingVideo === 'measure' ? 'Pause video' : 'Play video'}
             >
               <span className="text-sm font-semibold leading-none">
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-2xl bg-black">
               <video
                 ref={measureVideoRef}
-                className="block w-auto h-60 lg:h-full object-cover"
+                className="block w-auto h-60 md:h-full object-cover"
                 muted
                 loop
                 playsInline
@@ -123,7 +123,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => togglePlay('design', designVideoRef)}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 hover:bg-white text-black transition"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-800 text-white transition"
               aria-label={playingVideo === 'design' ? 'Pause video' : 'Play video'}
             >
               <span className="text-sm font-semibold leading-none">
@@ -147,7 +147,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-2xl bg-black">
               <video
                 ref={designVideoRef}
-                className="block w-auto h-60 lg:h-full object-cover"
+                className="block w-auto h-60 md:h-full object-cover"
                 muted
                 loop
                 playsInline
@@ -171,7 +171,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => togglePlay('orders', ordersVideoRef)}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 hover:bg-white text-black transition"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-800 text-white transition"
               aria-label={playingVideo === 'orders' ? 'Pause video' : 'Play video'}
             >
               <span className="text-sm font-semibold leading-none">
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-2xl bg-black">
               <video
                 ref={ordersVideoRef}
-                className="block w-auto h-60 lg:h-full object-cover"
+                className="block w-auto h-60 md:h-full object-cover"
                 muted
                 loop
                 playsInline

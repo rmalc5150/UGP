@@ -101,12 +101,12 @@ export default function AiSearchPanel() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Try: black lightweight boxers with no visible branding"
-            className="min-h-12 rounded-full flex-1 border border-gray-700 bg-black px-4 text-sm text-white outline-none transition-colors placeholder:text-gray-600 focus:border-white"
+            className="min-h-12 rounded-full flex-1 border border-gray-700 bg-black px-4 text-sm text-white outline-none transition-colors placeholder:text-gray-500 focus:border-white"
           />
           <button
             type="submit"
             disabled={!canSearch}
-            className="min-h-12 rounded-full px-6 text-sm uppercase tracking-[0.2em] text-black bg-white bg-opacity-80 disabled:bg-opacity-30 transition-colors hover:bg-opacity-100 hover:text-black disabled:cursor-not-allowed"
+            className="min-h-12 rounded-full px-6 text-sm uppercase text-white hover:bg-gray-800 transition-colors hover:bg-opacity-100 disabled:cursor-not-allowed"
           >
             {isLoading ? 'Searching' : 'Search'}
           </button>
