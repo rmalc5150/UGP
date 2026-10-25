@@ -22,7 +22,7 @@ export default function LaunchCountdown() {
     now === null ? null : Math.max(0, Math.ceil((launchTime - now) / 86_400_000));
 
   return (
-    <h1 className="text-lg tracking-tight sm:text-3xl">
+    <h1 className="text-lg tracking-tight sm:text-3xl sm:font-medium">
       <span className="tabular-nums">{daysRemaining ?? '–'}</span>{' '}
       {daysRemaining === 1 ? 'day' : 'days'} until launch
     </h1>
