@@ -1,4 +1,5 @@
 import Logo from '@/components/Logo';
+import LaunchCountdown from '@/components/LaunchCountdown';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
     >
       <link rel="preload" as="image" href="/Risograph-Grid.webp" fetchPriority="high" />
       <header className="sticky top-0 z-10 w-full px-6 py-3 bg-black text-white">
-        <h1 className="text-2xl font-medium tracking-tight sm:text-3xl">We&apos;re months away.</h1>
+        <LaunchCountdown key="launch-days" />
       </header>
       <div className="flex flex-1 flex-col items-center justify-center px-6 py-16">
         <Logo width={480} height={182} className="h-auto w-full max-w-sm sm:max-w-md" />
@@ -37,8 +38,8 @@ export default function Home() {
             <path d="m3 7 9 6 9-6" />
           </svg>
         </a>
-        <p className="text-right text-xs sm:text-sm">
-          &copy; {new Date().getFullYear()} Untitled Garment Project. All rights reserved.
+        <p className="text-right text-xs font-thin">
+          &copy; {new Date().getFullYear()} UGP. All rights reserved.
         </p>
       </footer>
     </section>
