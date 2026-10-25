@@ -6,9 +6,10 @@ export default function Home() {
       className="flex min-h-svh flex-col bg-white bg-cover bg-center bg-no-repeat text-center text-stone-900"
       style={{
         backgroundImage:
-          "linear-gradient(rgb(255 255 255 / 50%), rgb(255 255 255 / 50%)), url('/Risograph-Grid.png')",
+          "linear-gradient(rgb(255 255 255 / 50%), rgb(255 255 255 / 50%)), url('/Risograph-Grid.webp')",
       }}
     >
+      <link rel="preload" as="image" href="/Risograph-Grid.webp" fetchPriority="high" />
       <header className="sticky top-0 z-10 w-full px-6 py-3 bg-black text-white">
         <h1 className="text-2xl font-medium tracking-tight sm:text-3xl">We&apos;re months away.</h1>
       </header>

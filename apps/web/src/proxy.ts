@@ -10,6 +10,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!$|_next/|favicon\\.ico$|ugp%20logo\\.png$|ugp logo\\.png$|Risograph-Grid\\.png$).*)',
+    '/((?!$|_next/|favicon\\.ico$|ugp%20logo\\.png$|ugp logo\\.png$|Risograph-Grid\\.(?:png|webp)$).*)',
   ],
 };
