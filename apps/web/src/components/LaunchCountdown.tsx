@@ -23,8 +23,8 @@ export default function LaunchCountdown() {
 
   return (
     <h1 className="text-lg tracking-tight sm:text-3xl sm:font-medium">
-      <span className="tabular-nums">{daysRemaining ?? '–'}</span>{' '}
-      {daysRemaining === 1 ? 'day' : 'days'} until launch
+      <span className="">{daysRemaining ?? '–'}</span> {daysRemaining === 1 ? 'day' : 'days'} until
+      launch
     </h1>
   );
 }

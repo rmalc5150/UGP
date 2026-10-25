@@ -28,7 +28,7 @@ export default function Home() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth={1.5}
+            strokeWidth={1}
             strokeLinecap="round"
             strokeLinejoin="round"
             className="h-6 w-6"
@@ -38,7 +38,7 @@ export default function Home() {
             <path d="m3 7 9 6 9-6" />
           </svg>
         </a>
-        <p className="text-right text-xs font-thin">
+        <p className="text-right text-xs font-light">
           &copy; {new Date().getFullYear()} UGP. All rights reserved.
         </p>
       </footer>
