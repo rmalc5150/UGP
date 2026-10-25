@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { Manrope, Overpass } from 'next/font/google';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import './globals.css';
 
 const manrope = Manrope({
@@ -17,7 +15,8 @@ const overpass = Overpass({
 
 export const metadata: Metadata = {
   title: 'UGP',
-  description: 'Thoughtfully made essentials for everyday life.',
+  description:
+    "We're months away. For More information, please contact support@untitledgarmentproject.com",
 };
 
 export default function RootLayout({
@@ -28,9 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${overpass.variable} flex flex-col min-h-screen`}>
-        <Header />
         <main className="flex-1">{children}</main>
-        <Footer />
       </body>
     </html>
   );
